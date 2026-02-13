@@ -1,16 +1,46 @@
-# React + Vite
+# 🧠 Microsoft 365 Copilot Chat API Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a lightweight React app that integrates with the Microsoft 365 Copilot Chat API to enable conversational AI experiences grounded in your Microsoft 365 data (emails, meetings, files, etc.).
 
-Currently, two official plugins are available:
+🚀 Built in ~3 hours as a proof-of-concept.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- 🔐 MSAL authentication with delegated Microsoft Graph permissions
+- 💬 Multi-turn chat interface with Copilot
+- 📡 Axios-based integration with the Microsoft Graph `/copilot/conversations` and `/chat` endpoints
+- 🧠 Copilot responses grounded in your M365 context
+- 🛠️ Error handling, retry logic, and debug logging
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📸 Demo
 
-## Expanding the ESLint configuration
+> [Insert screen recording link here]
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧰 Tech Stack
+
+- React (Vite)
+- MSAL.js (Microsoft Authentication Library)
+- Axios
+- Microsoft Graph API (beta)
+- Microsoft 365 Copilot Chat API (Preview)
+
+## 🧪 Prerequisites
+
+- Microsoft 365 tenant with Copilot licenses assigned
+- Azure AD App Registration with the following delegated permissions:
+  - User.Read
+  - Sites.Read.All
+  - Mail.Read
+  - People.Read.All
+  - OnlineMeetingTranscript.Read.All
+  - Chat.Read
+  - ChannelMessage.Read.All
+  - ExternalItem.Read.All
+
+## 🔧 Setup
+
+1. Clone the repo:
+
+```bash
+git clone https://github.com/your-org/copilot-chat-demo.git
+cd copilot-chat-demo
