@@ -9,8 +9,6 @@ This is a lightweight React app that integrates with the Microsoft 365 Copilot C
 🧠 Copilot responses grounded in your M365 context
 🛠️ Error handling, retry logic, and debug logging
 
-📸 Demo
-🎥 [Insert screen recording link here]
 🧰 Tech Stack
 
 React (Vite)
@@ -32,7 +30,6 @@ OnlineMeetingTranscript.Read.All
 Chat.Read
 ChannelMessage.Read.All
 ExternalItem.Read.All
-
 
 
 🔧 Setup
